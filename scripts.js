@@ -42,7 +42,16 @@ form.addEventListener(
         if(valorEmail.trim() === ""){
             alert("Por favor, preencha o seu Email!");
             formularioValido = false;
-        }
+            }
+
+        if(formularioValido) {
+        localStorage.setItem("techday_nome", valorNome);
+        localStorage.setItem("techday_email", valorEmail);
+
+        console.log("Dados salvos no LocalStorage com sucesso!");
+        console.log("Nome salvo:", localStorage.getItem("techday_nome"));
+        console.log("Email salvo:", localStorage.getItem("techday_email"));
+            }
 
         if(formularioValido) {
         localStorage.setItem("techday_nome", valorNome);
@@ -52,5 +61,6 @@ form.addEventListener(
         console.log("Nome salvo:", localStorage.getItem("techday_nome"));
         console.log("Email salvo:", localStorage.getItem("techday_email"));
         }
+        
     }
 )
