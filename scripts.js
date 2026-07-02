@@ -52,5 +52,6 @@ form.addEventListener(
         console.log("Nome salvo:", localStorage.getItem("techday_nome"));
         console.log("Email salvo:", localStorage.getItem("techday_email"));
         }
+        
     }
 )
